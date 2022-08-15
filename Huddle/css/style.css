@@ -1,0 +1,489 @@
+@import url(../css/fonts.css);
+* {
+    margin: 0%;
+    box-sizing:border-box;
+    overflow-x:hidden;
+    /* overflow-y: hidden; */
+}
+
+
+/* global class */
+
+.btn {
+    border-radius: 2rem;
+    padding: 0.4rem 2.4rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--Poppins);
+   
+}
+
+span{
+    padding: .9rem 0;
+    font-family: var(--Poppins);
+    font-size: .7rem;
+    color: #D7ECEE;
+}
+
+
+a {
+    text-decoration: none;
+    color: #D7ECEE;
+}
+
+p{
+    font-family: var(--Poppins);
+    color: var(--Grayish-Blue)
+}
+
+h1{
+    font-family: var(--Poppins-Bold);
+    font-size: 1.9rem;
+    color:var(--Very-Dark-Cyan);
+}
+
+.flex-row{
+    display: flex;
+}
+
+
+:root{
+    --Poppins: 'Poppins', 'cursive';
+    --Poppins-Bold :'Poppins-Bold';
+    --Pink: hsl(322, 100%, 66%);    
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Pinkish: #FFECFF; 
+
+}
+
+
+/* ...........Top head section.............. */
+
+.head-background{
+    background:url(../images/bg-hero-desktop.svg) ;
+    background-size: cover;
+    height: 78vh;
+    background-color: var(--Very-Pale-Cyan);
+    /* padding-bottom: 6%; */
+    overflow-y: hidden;
+}
+
+.container{
+    padding: 0 3.6rem;
+}
+
+.logo-flex-row{
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-flex-row .logo{
+    width: 150px;
+    /* padding-left: 60px; */
+}
+
+.header-btn{
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    box-shadow: .3px .3px 7px 4px #DEEBF1;
+    color: var(--Grayish-Blue);
+    font-size: 0.7rem;
+}
+
+ /* ......XXXX.....Top head section.........XXXX..... */
+
+ /*........header content............ */
+.header-content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 3.5rem;
+}
+
+
+
+
+.paragraph {
+    font-family: var(--Poppins);
+    color: var(--Grayish-Blue);
+    font-size: .9rem;
+    padding-top: 1.5rem;
+}
+
+.content-btn-container{
+    padding-top: 1.5rem;
+}
+
+.content-btn{
+    background-color:hsl(322, 77%, 76%);
+    font-size: .78rem;
+    font-weight: bold;
+    color: var(--Pinkish);
+    padding: 1.2rem 4rem ;
+}
+
+.header-icon-img-container{
+    text-align: right;
+}
+
+.header-icon-img{
+    height: 50%;
+}
+
+/*....X....header content........X.... */
+
+/*.............form............... */
+
+
+
+.main{
+    margin: 7rem -3rem ;  
+}
+
+.main-container{
+    padding: 1.5rem 7rem;
+}
+
+
+.main-container .form{
+   display: grid;
+   grid-template-columns: 65% 35%;
+   max-width: 100%;
+   padding: 2.9rem 0;
+   background-color: #FFFFFF;
+   box-shadow: .3px .3px 7px 4px #DEEBF1;
+   border-radius: .6rem;  
+   margin: auto;  
+}
+
+.main-container .conversations-form{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.form-content{
+    margin: 3rem 2rem;
+}
+
+.form-heading{
+    padding: 0rem 7rem;
+    font-size: 1.8rem;
+}
+
+.form-paragraph{
+    padding: 1rem 7rem;
+    font-size: .9rem
+}
+
+.grow-together-img{
+  height: 35vh;
+  /* overflow-y: hidden; */
+}
+.img{
+    margin-left: 2rem;
+}
+
+.get-started-container{
+    text-align: center;
+    overflow: visible;
+}
+
+.get-started{
+    margin: 0 20rem;
+    padding: 3rem 0;
+    background-color: #FFFF;
+    box-shadow: .3px .3px 7px 4px #DEEBF1;
+    border-radius: .6rem;
+    text-align: center;
+    position: relative;
+    top: 4rem;
+}
+
+.gs-header{
+    font-family: var(--Poppins);
+    font-size: 1.5rem;
+}
+
+.gs-btn{
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    background-color: var(--Pink);
+    color: var(--Pinkish);
+}
+
+/*......X.......form........X....... */
+
+
+/* ..........footer........ */
+footer{
+    background-color: #00252E;
+    padding: 5rem 5rem;
+}
+
+.footer-text{
+    color: #FFFFFF;
+    font-family: var(--Poppins-Bold);
+    font-size: .8rem;
+}
+
+.footer-flex{
+    justify-content: space-around;
+}
+
+.footer-flex span{
+    padding: .9rem 0;
+    font-family: var(--Poppins);
+    font-size: .7rem;
+    color: #D7ECEE;
+}
+
+.loc-cont-mail{
+    justify-content: space-around;
+    padding: .9rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+.abt-do{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-us{
+    display: flex;
+    flex-direction: column;
+}
+
+.social i{
+    justify-content: space-between;
+}
+.abt-do a:hover{
+    text-decoration: underline;
+}
+
+.social i:hover {
+    color: var(--Pink);
+}
+/* X......x..x..footer..X...x... X*/
+
+
+@media only screen and (max-width:1260px){
+    /* .head-background{
+        
+    } */
+
+
+    .paragraph{
+        font-size: .74rem;
+    }
+
+    .main-container{
+        padding: .9rem 4rem;
+    }
+
+    .get-started{
+        margin: 0 10rem;
+        padding: 3rem 0;
+    }
+
+    .main-container .conversations-form{
+        display: grid;
+        grid-template-columns: 37% 63%;
+    }
+
+    .img{
+        margin-left: .2rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+   .header-icon-img{
+       height: 47%;
+   }
+}
+
+
+@media only screen and (max-width:978px){
+  h1{
+      font-size: 1.7rem;
+  }
+
+  .header-icon-img{
+    height: 45%;
+}
+
+.grow-together-img{
+    height: 31vh;
+    /* overflow-y: hidden; */
+  }
+  .head-background{
+    height: 70vh;
+}
+  
+.main-container .form{
+    padding: 1rem 0;  
+ }
+}
+
+@media only screen and (max-width:900px){
+    .header-icon-img{
+        height: 42%;
+    }
+
+    .grow-together-img{
+        height: 30vh;
+        /* overflow-y: hidden; */
+      }
+}
+
+@media only screen and (max-width:888px){
+   
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    .paragraph{
+        font-size: .69rem;
+    }
+    .header-icon-img{
+        height: 40%;
+    }
+
+    .grow-together-img{
+        height: 29vh;
+        /* overflow-y: hidden; */
+      }
+
+      .form-paragraph{
+        padding: 1rem 5rem;
+        font-size: .7rem;
+    }
+
+    .form-heading{
+        padding: 0rem 5rem;
+        font-size: 1.3rem;
+    }
+
+    .content-btn{
+        padding:1rem 3rem;
+    }
+
+    .head-background{
+        height: 64vh;
+    }
+}
+
+
+@media only screen and (max-width:820px){
+    .header-icon-img{
+        height: 38%;
+    }
+
+    .head-background{
+        height: 60vh;
+    }
+
+    .grow-together-img{
+        height: 26vh;
+        /* overflow-y: hidden; */
+      }
+}
+
+@media only screen and (max-width:783px){
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .header-icon-img{
+        height: 36%;
+    }
+
+    .head-background{
+        height: 59vh;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .grow-together-img{
+        height: 30vh;
+        /* overflow-y: hidden; */
+      }
+}
+
+@media only screen and (max-width:650px){
+    .head-background{
+        background:url(../images/bg-hero-mobile.svg) ;
+        background-size: cover;
+        height: 120vh;
+        background-color: var(--Very-Pale-Cyan);
+        overflow-y: hidden;
+    }
+
+    .header-content{
+        display: initial;
+        justify-content: center;
+    }
+
+    .content-container{
+        padding-top: 5rem;
+        text-align: center;
+     }
+
+     .paragraph {
+        font-size: 1rem;
+        padding-top: 1.5rem;
+        font-family: var(--Poppins);
+        color: var(--Grayish-Blue)
+    }
+
+    .header-icon-img-container{
+        padding-top: 2rem;
+    }
+
+    .header-icon-img{
+        height: 45vh;
+    }
+
+    .main-container .form{
+        display:inherit;
+        /* width: 100%;
+        padding: 2.9rem 0; */
+        /* background-color: #FFFFFF;
+        box-shadow: .3px .3px 7px 4px #DEEBF1;
+        border-radius: .6rem;    */
+    }
+    .main-container{
+        text-align: center;
+        background-color: #FFFFFF;
+        box-shadow: .3px .3px 7px 4px #DEEBF1;
+        border-radius: .6rem;
+        padding: .2rem .01rem;
+        margin: 2rem 0;   
+    }
+    .main{
+        padding: 0rem 8rem ;
+    }
+
+    .form-heading{
+        padding: 0rem .9rem;
+        font-size: 1.4rem;
+    }
+    
+    .form-paragraph{
+        padding: 1rem .9rem;
+        font-size: .9rem
+    }
+
+    .get-started{
+        padding: 4rem 0;
+        margin: 0 1.4rem;
+    }
+
+    .flex-row{
+        display: inherit;
+    }
+
+}
+
+
